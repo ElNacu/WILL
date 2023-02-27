@@ -12,6 +12,15 @@ function stringMasLarga(strings) {
   // stringMasLarga(['JavaScript', 'HTML', 'CSS']); debe retornar 'JavaScript'
 
   // Tu código aca
+  var strLargo=[]
+  strings.forEach((a)=>{
+    var palabra=a.split("") //con poner solo a ya se entiende que se trata del elemento de ese array. 
+    if (palabra.length>strLargo.length){
+      strLargo=[]
+      palabra.forEach((letra)=>strLargo.push(letra))
+    }
+  })
+  return strLargo.join("")
 }
 
 // No modifiques nada debajo de esta linea //

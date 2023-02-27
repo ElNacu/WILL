@@ -15,6 +15,13 @@ function pluck(array, propiedad) {
 
   // Tu código acá:
 
+  // crear arreglo final, recorrer el array y pushear al arreglo final el valor de cada propiedad del objeto que se
+  // recorre
+  var arrayFinal=[]
+  for (var i=0; i<array.length;i++){
+    arrayFinal.push(array[i][propiedad])
+  }
+  return arrayFinal
 }
 
 // No modifiques nada debajo de esta linea //
